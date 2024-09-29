@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        video {
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bagian Profil -->
+        <h1>Profil Pribadi</h1>
+        <div class="profile-section">
+            <!-- Tag img digunakan untuk menampilkan foto profil -->
+            <!-- Fungsi: Tag img digunakan untuk menampilkan gambar. Saya menggunakan tag ini untuk menampilkan foto profil pengguna. -->
+            <div>
+                <center><h4>Foto Profil</h4></center>
+                <img src="profile.jpeg" alt="Foto Profil">
+            </div>
+            <!-- Tag video digunakan untuk menampilkan video perkenalan -->
+            <!-- Fungsi: Tag video digunakan untuk menampilkan media video. Saya menggunakan tag ini untuk menampilkan video perkenalan pengguna. -->
+            <div>
+                <center><h4>Video Perkenalan</h4></center>
+                <video controls>
+                    <source src="video-perkenalan.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Bagian Tentang Saya -->
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+
+        <!-- Bagian Keterampilan dalam bentuk tabel -->
+        <!-- Tag table digunakan untuk menampilkan data keterampilan -->
+        <!-- Fungsi: Tag table digunakan untuk menampilkan data dalam bentuk tabel. Saya menggunakan tag ini untuk menampilkan daftar keterampilan beserta tingkatannya. -->
+        <h2>Keterampilan</h2>
+        <table>
+            <!-- Baris pertama tabel (header) -->
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+            </tr>
+            <!-- Baris kedua -->
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Mahir</td>
+            </tr>
+            <!-- Baris ketiga -->
+            <tr>
+                <td>JavaScript</td>
+                <td>Menengah</td>
+            </tr>
+            <!-- Baris keempat -->
+            <tr>
+                <td>Python</td>
+                <td>Pemula</td>
+            </tr>
+        </table>
+
+        <!-- Bagian Formulir Hubungi Saya -->
+        <!-- Tag form digunakan untuk membuat form input -->
+        <!-- Fungsi: Tag form digunakan untuk menerima input dari pengguna. Saya menggunakan tag ini untuk menampilkan form agar pengunjung dapat mengirim pesan. -->
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post">
+            <!-- Input nama -->
+            <!-- Fungsi: Tag input digunakan untuk membuat kolom input teks. Di sini digunakan untuk menerima nama pengirim. -->
+            <div>
+                <label for="nama">Nama: </label>
+                <input type="text" name="nama" placeholder="Nama" required>
+            </div>
+            <!-- Input email -->
+            <!-- Fungsi: Tag input dengan tipe email digunakan untuk menerima alamat email dari pengguna. -->
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <!-- Input pesan -->
+            <!-- Fungsi: Tag textarea digunakan untuk menerima pesan yang lebih panjang. -->
+            <div>
+                <p>Pesan: </p>
+                <textarea id="pesan" name="pesan" rows="5"></textarea>
+            </div>
+            <!-- Tombol Kirim -->
+            <!-- Fungsi: Tag button digunakan untuk membuat tombol yang bisa diklik pengguna untuk mengirimkan form. -->
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Bagian Media Sosial -->
+        <!-- Tag a digunakan untuk membuat hyperlink -->
+        <!-- Fungsi: Tag a digunakan untuk membuat tautan. Saya menggunakan tag ini untuk menampilkan tautan ke profil media sosial pengguna. -->
+        <h2>Media Sosial:</h2>
+        <p>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
